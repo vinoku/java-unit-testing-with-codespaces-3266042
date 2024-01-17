@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 
 public class DateChecker {
 
@@ -18,7 +19,8 @@ public class DateChecker {
     }
 
     public boolean has31Days(Month month) {
-        return false;
+        List<Month> monthWith31days = Arrays.asList(Month.JANUARY, Month.MARCH, Month.MAY, Month.JULY, Month.AUGUST, Month.OCTOBER, Month.DECEMBER);
+        return monthWith31days.contains(month);
     }
 
     
